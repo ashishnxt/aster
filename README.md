@@ -1,4 +1,4 @@
-# Nothing Tasks
+# aster
 
 A Dynamic-Island style pill for Ubuntu 22.04 (GNOME): a dot-matrix stopwatch at the top-centre of
 your screen with a red outline. Press **Space** and it morphs into a task notepad whose tasks live
