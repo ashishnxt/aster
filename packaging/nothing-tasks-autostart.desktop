@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Nothing Tasks
+Exec=nothing-tasks start
+NoDisplay=true
+StartupNotify=false
+X-GNOME-Autostart-enabled=true

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Nothing Tasks
+Comment=Stopwatch pill with Obsidian task notepad
+Exec=nothing-tasks settings
+Icon=alarm-symbolic
+Terminal=false
+Categories=Utility;
+StartupNotify=false

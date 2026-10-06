@@ -1,0 +1,18 @@
+#!/bin/sh
+# Fast path for keyboard shortcuts: talk to the running widget over D-Bus (~10 ms, no Python
+# start-up, so a held key cannot pile up processes). If the widget is not running, start it.
+# GNOME gives shortcut-launched commands a startup/activation token; forwarding it lets the
+# pill take keyboard focus (so Space works) despite focus-stealing prevention.
+act="${1:-toggle}"
+pd=""
+[ -n "$DESKTOP_STARTUP_ID" ] && pd="'desktop-startup-id': <'$DESKTOP_STARTUP_ID'>"
+if [ -n "$XDG_ACTIVATION_TOKEN" ]; then
+  [ -n "$pd" ] && pd="$pd, "
+  pd="${pd}'activation-token': <'$XDG_ACTIVATION_TOKEN'>"
+fi
+gdbus call --session --dest dev.nothing.tasks --object-path /dev/nothing/tasks \
+  --method org.freedesktop.Application.ActivateAction "$act" '[]' "{$pd}" >/dev/null 2>&1 && exit 0
+d=$(dirname "$0")
+[ -x "$d/nothing-tasks" ] && exec "$d/nothing-tasks" "$act"            # installed layout
+[ -f "$d/../run.py" ] && exec python3 "$d/../run.py" "$act"            # source folder
+exec nothing-tasks "$act"
