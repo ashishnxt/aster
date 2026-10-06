@@ -1,10 +1,10 @@
-# Nothing Tasks
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2f083c4e-7fc6-4508-acab-8baeecfff63d" /># Nothing Tasks
 
 A Dynamic-Island style pill for Ubuntu 22.04 (GNOME): a dot-matrix stopwatch at the top-centre of
 your screen with a red outline. Press **Space** and it morphs into a task notepad whose tasks live
 in an **Obsidian** note. An optional **MCP server** lets AI assistants manage the same tasks.
 
-![Uploading image.png…]()
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8fa2684b-91a9-42c7-96df-fe94ec2f8ce4" />
 
 
 ## Install
