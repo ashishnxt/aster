@@ -2,8 +2,7 @@ A Dynamic-Island style pill for Ubuntu 22.04 (GNOME): a dot-matrix stopwatch at 
 your screen with a red outline. Press **Space** and it morphs into a task notepad whose tasks live
 in an **Obsidian** note. An optional **MCP server** lets AI assistants manage the same tasks.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8fa2684b-91a9-42c7-96df-fe94ec2f8ce4" />
-
+[Screencast from 06-10-26 07:07:32 PM IST.webm](https://github.com/user-attachments/assets/a0decc1c-4b4b-4686-b34e-08cffe1dc468)
 
 ## Install
 **.deb (recommended)**
