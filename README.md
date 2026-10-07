@@ -22,6 +22,10 @@ The first command starts the widget in the background and returns; later command
 Something not working? `nothing-tasks doctor` (or `python3 run.py doctor`), then `nothing-tasks debug`.
 MCP needs `pip install mcp` (or `sudo apt install python3-pip` first).
 
+
+[Screencast from 07-10-26 04:24:37 PM IST.webm](https://github.com/user-attachments/assets/e94440f5-6408-4ca4-975e-661f3e1f655f)
+
+
 ## Use
 | Where | Key | Action |
 |---|---|---|
